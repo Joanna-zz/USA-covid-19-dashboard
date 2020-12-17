@@ -1,0 +1,1 @@
+web: gunicorn US_covid_dash:server
