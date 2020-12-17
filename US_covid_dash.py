@@ -62,7 +62,7 @@ covid_df=covid_df.reset_index()
 covid_df.columns=['code','positive','death','recovered']
 covid_state=covid_df.groupby('code').sum().reset_index()
 
-code=pd.read_csv('/Users/zqy/Desktop/code name.csv')
+code=pd.read_csv('code name.csv')
 code=code.loc[:,['state','code']]
 
 covid_state=pd.merge(code, covid_state)
